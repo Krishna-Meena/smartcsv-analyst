@@ -1,0 +1,66 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "smartcsv-analyst"
+version = "1.0.0"
+description = "Interactive CSV Analysis & Data Exploration"
+requires-python = ">= 3.12"
+dependencies = [
+    "streamlit>=1.45.0",
+    "pandas>=2.2.0",
+    "numpy>=2.0.0",
+    "plotly>=6.0.0",
+    "scipy>=1.14.0",
+    "charset-normalizer>=3.3.0",
+    "asteval>=1.0.0",
+    "kaleido>=0.2.1",
+    "pyyaml>=6.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=6.0.0",
+    "pytest-asyncio>=0.24.0",
+    "ruff>=0.8.0",
+    "mypy>=1.13.0",
+    "pandas-stubs>=2.2.0",
+    "types-pyyaml>=6.0",
+    "pre-commit>=4.0.0"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/smartcsv"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=6.0.0",
+    "ruff>=0.8.0",
+    "mypy>=1.13.0",
+    "pandas-stubs>=2.2.0",
+    "types-pyyaml>=6.0",
+    "pre-commit>=4.0.0",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B", "A", "SIM", "TCH", "RUF"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+check_untyped_defs = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=src/smartcsv --cov-report=term-missing --cov-report=html -v"
