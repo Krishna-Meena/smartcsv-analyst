@@ -41,12 +41,6 @@ Upload a CSV → get automatic profiling, data quality warnings, interactive cha
 
 ---
 
-## Screenshots
-
-> Upload your CSV — or load the built-in sample finance dataset with one click.
-
----
-
 ## Quick Start
 
 ### Option 1: Run Locally with uv (Recommended)
@@ -163,4 +157,4 @@ uv run pytest                    # ✅ 140/140 passing
 
 ## License
 
-MIT © 2025 SmartCSV Analyst Contributors
+MIT © 2026 SmartCSV Analyst Contributors
