@@ -11,7 +11,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![Tests](https://img.shields.io/badge/Tests-140%20passing-brightgreen?style=for-the-badge)](tests/)
 
-**[🚀 Live Demo]([https://YOUR_APP.streamlit.app](https://smartcsv-analyst-v2.streamlit.app/]))** | **[📖 Project Docs](PROJECT.md)** | **[🔧 How It Works](WORKING.md)** | **[📦 Tech Stack](TECH_STACK.md)**
+**[🚀 Live Demo]([https://smartcsv-analyst-v2.streamlit.app/])** | **[📖 Project Docs](PROJECT.md)** | **[🔧 How It Works](WORKING.md)** | **[📦 Tech Stack](TECH_STACK.md)**
 
 </div>
 
